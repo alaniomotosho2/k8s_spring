@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  web:
+    image: alaniomotosho2/k8s_spring
+    container_name: k8s_spring
+    ports:
+      - 8080:8080
+    
