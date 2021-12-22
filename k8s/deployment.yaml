@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: k8s-spring
+  name: k8s-spring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8s-spring
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: k8s-spring
+    spec:
+      containers:
+      - image: alaniomotosho2/k8s_spring:snapshot
+        name: k8s-spring-bf4m6
+        resources: {}
+status: {}
